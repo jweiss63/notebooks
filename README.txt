@@ -5,7 +5,7 @@
 
 # 2 -- build container [ takes 5-10 minutes ]
 
-    sudo docker build -t S9256-Container:v0 .
+    sudo docker build -t s9256-Container:v0 .
 
 
 # 3 -- launch/run the container [ auto starts jupyter notebook ]

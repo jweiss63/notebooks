@@ -1,16 +1,16 @@
 # 1 -- clone repository
 
-    git clone https://github.com/miroenev/rapids && cd rapids
+    git clone https://github.com/jweiss63/ngcf && cd ngctf
 
 
 # 2 -- build container [ takes 5-10 minutes ]
 
-    sudo docker build -t rapids-demo:v0 .
+    sudo docker build -t S9256-Container:v0 .
 
 
 # 3 -- launch/run the container [ auto starts jupyter notebook ]
 
-    sudo docker run --runtime=nvidia -it --rm -p 8888:8888 rapids-demo:v0
+    sudo docker run --runtime=nvidia -it --rm -p 8888:8888 S9256-Container:v0
 
 
 # 4 -- create a port map / ssh-tunnel to the container 
@@ -22,6 +22,6 @@
 
     use a browser [ firefox is recommended ] and navigate to 127.0.0.1:8888
     this should open a jupyter lab/notebook session
-    navigate to the /rapids directory
-    click on rapids_demo.ipynb to launch the demo
+    navigate to the /S9256-session directory
+    click on S9256-session.ipynb to launch the demo
 

@@ -17,6 +17,7 @@ RUN apt update && apt -y upgrade
 # Rebuild TensorFlow for python 2 and 3
 # RUN ./nvbuild.sh --python2
 # RUN ./nvbuild.sh --python3
+RUN git clone https://github.com/NVIDIA/DALI
 RUN git clone https://github.com/jweiss63/ngctf
 # Reset default working directory
 WORKDIR /workspace

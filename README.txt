@@ -10,7 +10,7 @@
 
 # 3 -- launch/run the container [ auto starts jupyter notebook ]
 
-    sudo docker run --runtime=nvidia -it --rm -p 8888:8888 S9256-Container:v0
+    sudo docker run --runtime=nvidia -it --rm -p 8888:8888 S9256-container:v0
 
 
 # 4 -- create a port map / ssh-tunnel to the container 

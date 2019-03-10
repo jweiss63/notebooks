@@ -6,7 +6,7 @@ FROM nvcr.io/nvidia/tensorflow:19.01-py3
 #        my-extra-package-2 \
 #      && \
 #    rm -rf /var/lib/apt/lists/
-
+RUN apt update && apt -y upgrade
 # Bring in changes from outside container to /tmp
 # (assumes my-tensorflow-modifications.patch is in same directory as Dockerfile)
 # COPY my-tensorflow-modifications.patch /tmp
@@ -17,7 +17,7 @@ FROM nvcr.io/nvidia/tensorflow:19.01-py3
 # Rebuild TensorFlow for python 2 and 3
 # RUN ./nvbuild.sh --python2
 # RUN ./nvbuild.sh --python3
-
+RUN git clone https://github.com/jweiss63/ngctf
 # Reset default working directory
 WORKDIR /workspace
 CMD jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token='' --NotebookApp.password=''

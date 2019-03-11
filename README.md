@@ -1,6 +1,6 @@
 # 1 -- clone repository
 
-    git clone https://github.com/jweiss63/ngcft && cd ngctf
+    git clone https://github.com/jweiss63/ngctf && cd ngctf
 
 
 # 2 -- build container [ takes 5-10 minutes ]
